@@ -116,9 +116,14 @@
 		@extend .site-logo;
 
 		max-height: 50px;
+		
 		@include media(tablet) {
 			max-height: 64px;
 			top: .9rem;
+		}
+
+		@media screen and (max-width: $tablet_width) {
+			right: 0;
 		}
 
 		&:focus {

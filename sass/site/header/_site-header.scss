@@ -63,6 +63,10 @@
 		overflow: hidden;
 		transition: box-shadow $background_transition ease-in-out;
 
+		@media screen and (max-width: $tablet_width) {
+			margin-left: auto;
+		}
+
 		.custom-logo {
 			min-height: inherit;
 		}

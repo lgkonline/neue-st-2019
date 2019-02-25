@@ -1,0 +1,17 @@
+.home {
+    .post {
+        &,
+        .entry-header,
+        .entry-content,
+        .entry-footer {
+            position: relative;
+        }
+
+        .attachment-post-thumbnail {
+            position: absolute;
+            opacity: .2;
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+}

@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "dev": "node-sass style.scss style.css",
-    "start": "npm run dev"
+    "build": "node-sass style.scss style.css --output-style compact",
+    "watch": "nodemon -e scss -x \"npm run dev\"",
+    "start": "npm run watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10"
   }
 }

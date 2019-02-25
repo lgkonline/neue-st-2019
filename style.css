@@ -5,7 +5,7 @@ Description: Twenty Nineteen Child Theme
 Author: Lars G. Kliesing
 Author URL: https://lgk.io
 Template: twentynineteen
-Version: 1.0.0
+Version: 1.0.1
 Text Domain: neue-st-2019
 */
 /*--------------------------------------------------------------
@@ -829,7 +829,7 @@ body.page .main-navigation { display: block; }
 
 .entry .post-thumbnail .post-thumbnail-inner { display: block; }
 
-.entry .post-thumbnail .post-thumbnail-inner img { position: relative; display: block; width: 200%; max-width: 200%; }
+.entry .post-thumbnail .post-thumbnail-inner img { position: relative; display: block; transform: translate(-50%, -50%) scale(3.8); margin-left: 50%; margin-top: 50%; }
 
 .image-filters-enabled .entry .post-thumbnail { position: absolute; display: block; }
 

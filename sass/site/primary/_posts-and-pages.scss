@@ -110,11 +110,15 @@
 	}
 
 	.post-thumbnail {
+		// width: 64px;
+		// height: 64px;
 
-		margin: $size__spacing-unit;
+		@extend .site-logo;
 
+		max-height: 50px;
 		@include media(tablet) {
-			margin: $size__spacing-unit $size__site-margins;
+			max-height: 64px;
+			top: .9rem;
 		}
 
 		&:focus {
@@ -122,12 +126,15 @@
 		}
 
 		.post-thumbnail-inner {
+			@extend .custom-logo-link;
+
 			display: block;
 
 			img {
 				position: relative;
 				display: block;
-				width: 100%;
+				width: 200%;
+				max-width: 200%;
 			}
 		}
 	}
@@ -135,7 +142,7 @@
 	.image-filters-enabled & {
 
 		.post-thumbnail {
-			position: relative;
+			position: absolute;
 			display: block;
 
 			.post-thumbnail-inner {
@@ -168,6 +175,7 @@
 				top: 0; left: 0;
 				content: "\020";
 				pointer-events: none;
+				border-radius: $site-logo-border-radius;
 			}
 
 			@include filter-duotone;

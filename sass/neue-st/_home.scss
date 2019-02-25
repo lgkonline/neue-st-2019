@@ -1,17 +1,9 @@
-.home {
-    .post {
-        &,
-        .entry-header,
-        .entry-content,
-        .entry-footer {
-            position: relative;
-        }
+.home .entry-title { 
+    padding-top: 50px;
+}
 
-        .attachment-post-thumbnail {
-            position: absolute;
-            opacity: .2;
-            width: 100% !important;
-            height: auto !important;
-        }
+@include media(tablet) {
+    .home .entry-title { 
+        padding-top: initial;
     }
 }

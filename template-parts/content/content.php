@@ -12,9 +12,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php echo neue_st_post_thumbnail(); ?>
 
 	<header class="entry-header">
+
+		<?php 
+		// twentynineteen_post_thumbnail(); 
+		neue_st_post_thumbnail();
+		?>
+
 		<?php
 		if ( is_sticky() && is_home() && ! is_paged() ) {
 			printf( '<span class="sticky-post">%s</span>', _x( 'Featured', 'post', 'twentynineteen' ) );

@@ -1,0 +1,18 @@
+.site-branding-container {
+    position: relative;
+}
+
+.site-search {
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    right: calc(10% + 60px);
+
+    input {
+        border-radius: 2em;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

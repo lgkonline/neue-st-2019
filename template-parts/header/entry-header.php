@@ -10,7 +10,7 @@
 $discussion = ! is_page() && twentynineteen_can_show_post_thumbnail() ? twentynineteen_get_discussion_data() : null; ?>
 
 <?php if (is_home()) : ?>
-<a href="<?php echo get_permalink(); ?>">
+<a href="<?php echo get_permalink(); ?>#entry-header">
 <?php endif; ?>
 
 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

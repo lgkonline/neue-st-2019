@@ -53,7 +53,7 @@
 						$classes = 'entry-header has-discussion';
 					}
 					?>
-					<div class="<?php echo $classes; ?>">
+					<div id="entry-header" class="<?php echo $classes; ?>">
 						<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
 					</div><!-- .entry-header -->
 					<?php rewind_posts(); ?>

@@ -21,14 +21,6 @@
 		<?php endif; ?>
 	<?php endif; ?>
 
-	<?php
-	$description = get_bloginfo( 'description', 'display' );
-	if ( $description || is_customize_preview() ) :
-		?>
-			<p class="site-description">
-				<?php echo $description; ?>
-			</p>
-	<?php endif; ?>
 	<?php if ( has_nav_menu( 'menu-1' ) ) : ?>
 		<nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'twentynineteen' ); ?>">
 			<?php
@@ -59,8 +51,11 @@
 	<?php endif; ?>
 </div><!-- .site-branding -->
 
-<div class="site-search">
-	<form>
-		<input type="text">
+<div class="site-search d-none d-tablet-block">
+	<form action="<?php echo get_site_url(); ?>" method="get">
+		<input type="text" name="s" value="<?php the_search_query(); ?>">
+		<button type="submit" class="site-search-submit">
+			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+		</button>
 	</form>
 </div>

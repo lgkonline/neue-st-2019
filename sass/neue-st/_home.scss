@@ -1,9 +1,9 @@
-.home .entry-title { 
-    padding-right: 50px;
-}
+.home {
+    .site-header.featured-image {
+        min-height: initial !important;
+    }
 
-@include media(tablet) {
-    .home .entry-title { 
-        padding-top: initial;
+    .entry-header a:hover .entry-title {
+        color: rgba(white, .7) !important;
     }
 }

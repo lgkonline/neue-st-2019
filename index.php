@@ -26,9 +26,16 @@ get_header();
 		if ( have_posts() ) {
 
 			// Load posts loop.
+			$i = 0;
 			while ( have_posts() ) {
 				the_post();
-				get_template_part( 'template-parts/content/content' );
+
+				// Don't show latest post, because it's already feautured on header
+				if ($i > 0) {
+					get_template_part( 'template-parts/content/content' );
+				}
+
+				$i++;
 			}
 
 			// Previous/next page navigation.

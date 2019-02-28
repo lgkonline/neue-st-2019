@@ -5,7 +5,7 @@ Description: Twenty Nineteen Child Theme
 Author: Lars G. Kliesing
 Author URL: https://lgk.io
 Template: twentynineteen
-Version: 1.0.3
+Version: 1.0.5
 Text Domain: neue-st-2019
 */
 /*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Variables # Normalize # Typography ## Headings ## Copy # Elements ## Lists ## Tables # Forms ## Buttons ## Fields # Navigation ## Links ## Menus ## Next & Previous # Accessibility # Alignments # Clearings # Layout # Widgets # Content ## Archives ## Posts and pages ## Comments # Blocks # Media ## Captions ## Galleries --------------------------------------------------------------*/
@@ -1471,6 +1471,14 @@ svg { transition: fill 120ms ease-in-out; fill: currentColor; }
 
 /* Neue St */
 .lgk-cookie-message { font-size: 14px; font-family: "HK Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important; position: fixed !important; }
+
+.lgk-logo { position: fixed; z-index: 1000; bottom: 1rem; left: 50%; transform: translateX(-50%); width: 42px; height: 42px; transition: opacity 300ms ease-in-out; }
+
+@media only screen and (min-width: 768px) { .lgk-logo { bottom: 2.5rem; } }
+
+.lgk-logo.hide { opacity: 0; }
+
+.lgk-logo.show { opacity: 1; }
 
 .home .site-header.featured-image { min-height: initial !important; }
 

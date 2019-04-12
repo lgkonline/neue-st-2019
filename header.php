@@ -101,4 +101,24 @@
 			<?php endif; ?>
 		</header><!-- #masthead -->
 
+		<script>
+			var masthead = document.querySelector("#masthead.featured-image");
+			var lgkPillBtn = document.querySelector(".lgk-pill-btn");
+
+			if (masthead && lgkPillBtn) {
+				lgkPillBtn.classList.remove("black");
+
+				window.addEventListener("scroll", function() {
+					if ((window.scrollY) >= (masthead.offsetHeight)) {
+						console.log("add");
+						lgkPillBtn.classList.add("black");
+					}
+					else {
+						console.log("remove");
+						lgkPillBtn.classList.remove("black");
+					}
+				});
+			}
+		</script>
+
 	<div id="content" class="site-content">
